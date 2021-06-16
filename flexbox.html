@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FLEXBOX CSS</title>
+  <style>
+    @media(min-width:468px){
+    .container-1{
+     flex-direction:column;
+
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      */
+    }
+    
+    .container-2{
+      display:flex;  
+      /*
+      justify-content:flex-start;
+      justify-content:flex-end;
+      justify-content:center;
+      justify-content:space-between;
+      */
+      justify-content:space-around;
+      
+    }
+  }
+  
+  .container-3{
+    display:flex;  
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+  
+  .container-1 div, .container-2 div, .container-3 div{
+    border:1px #ccc solid;
+    padding:10px;
+    
+  }
+  
+  .box-1{
+    flex:2;
+    order:2;
+     background:black;
+     color: white;
+  }
+  
+  .box-2{
+    flex:1;
+    order:1;
+    background:gray;
+     color: white;
+  }
+  
+  .box-3{
+    flex:3;
+    order: 3;
+    background:black;
+     color: white;
+  }
+  
+  .container-2-box{
+    flex-basis: 27%;  
+    background:black;
+     color: white;
+  }
+  
+  .container-3-box{
+    flex-basis:12%;
+    background:black;
+     color: white;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container-1">
+  <div class="box-1">
+        <h3>HELLO WORLD</h3>
+        <p>GOODBYE</p>
+      </div>
+
+     <div class="box-2">
+        <h3>HELLO WORLD</h3>
+        <p>GOODBYE</p>
+      </div>
+
+      <div class="box-3">
+        <h3>HELLO WORLD</h3>
+        <p>GOODBYE</p>
+      </div>
+    </div>
+
+    <div class="container-2">
+  <div class="container-2-box">
+        <h3>CSS</h3>
+        <p>THE BEST</p>
+      </div>
+
+      <div class="container-2-box">
+         <h3>CSS</h3>
+        <p>THE BEST</p>
+      </div>
+
+      <div class="container-2-box">
+        <h3>CSS</h3>
+        <p>THE BEST</p>
+      </div>
+    </div>
+
+    <div class="container-3">
+  <div class="container-3-box">
+       <h3>GAGRADUATE AKO</h3>
+        <h3>I LOVE MY COURSE 3X </p>
+      </div>
+
+      <div class="container-3-box">
+       <h3>GAGRADUATE AKO</h3>
+        <h3>I LOVE MY COURSE 3X </p>
+      </div>
+
+      <div class="container-3-box">
+        <h3>GAGRADUATE AKO</h3>
+        <h3>I LOVE MY COURSE 3X </p>
+      </div>
+
+      <div class="container-3-box">
+       <h3>GAGRADUATE AKO</h3>
+        <h3>I LOVE MY COURSE 3X </p>
+      </div>
+      
+      <div class="container-3-box">
+       <h3>GAGRADUATE AKO</h3>
+        <h3>I LOVE MY COURSE 3X </p>
+      </div>
+
+      <div class="container-3-box">
+       <h3>GAGRADUATE AKO</h3>
+        <h3>I LOVE MY COURSE 3X </p>
+      </div>
+  
+</div>
+
+</body>
+</html>
+
+

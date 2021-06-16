@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <style>
+    .wrapper{
+      display:grid;
+      grid-template-columns: 1fr 3fr 2fr;
+      /*
+      grid-column-gap:1em;
+      grid-row-gap:1em;
+      */
+      grid-gap:1em;
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .wrapper > div{
+      background:gray;
+      padding:1em;
+      color: white;
+    }
+    .wrapper > div:nth-child(odd){
+      background:black;
+   
+    }
+
+    .box1{
+      /*align-self:start;*/
+      grid-column:1/3;
+      grid-row:1/3;
+    }
+
+    .box2{
+      /*align-self:end;*/
+      grid-column:3;
+      grid-row:1/3;
+    }
+
+    .box3{
+      /*justify-self:end;*/
+      grid-column:2/3;
+      grid-row:3;
+    }
+
+    .box4{
+      /*justify-self:end;*/
+      grid-column:3/4;
+      grid-row:3;
+    }
+
+    .box5{
+      /*justify-self:end;*/
+      grid-column:1;
+      grid-row:3/4;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h5>CSS GRID</h5>
+  <div class="wrapper">
+    <div class="box box1">
+    Unshielded Twisted Pair (UTP) cable 
+  </div>
+
+    <div class="box box2">    
+       Straightthrough
+    </div>
+      
+       <div class="box box3">     
+      Crossover
+    </div>
+
+    <div class="box box4">   
+        PIN NUMBER DESIGNATIONS FOR T568A
+      </div>
+
+      <div class="box box5">   
+        PIN NUMBER DESIGNATIONS FOR T568A
+      </div>
+  
+  </div>
+</body>
+</html>
